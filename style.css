@@ -156,7 +156,8 @@ html {
 }
 
 .attribution {
-  font-size: 11px;
+  padding: 12px 0;
+  font-size: 0.8rem;
   text-align: center;
 }
 .attribution a {
