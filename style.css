@@ -10,32 +10,35 @@
   margin: 0;
 }
 
-body {
+body,
+html {
+  height: 100%;
   font-family: "DM Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: hsl(27, 66%, 92%);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 .container {
-  max-width: 1440px;
-  height: 95vh;
-  margin: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main__component {
   margin: auto;
   width: 480px;
   height: 600px;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .component__header {
@@ -58,8 +61,8 @@ body {
 }
 
 .balance {
-  font-size: 15px;
-  opacity: 0.8;
+  font-size: 0.9rem;
+  opacity: 0.85;
 }
 
 .balance__numbers {
@@ -76,7 +79,7 @@ body {
 }
 
 .body__title {
-  font-size: 24px;
+  font-size: 1.4rem;
   font-weight: 700;
   color: hsl(25, 47%, 15%);
 }
@@ -110,12 +113,12 @@ body {
 }
 
 .text__sm {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: var(--medium-brown);
 }
 
 .amount {
-  font-size: 15px;
+  font-size: 0.875rem;
   padding: 5px;
   background-color: var(--dark-brown);
   color: #fff;
@@ -137,17 +140,25 @@ body {
 }
 
 .summary__numbers {
-  font-size: 36px;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--dark-brown);
 }
 
 .percent__numbers {
-  font-size: 16px;
+  font-size: 0.9rem;
   font-weight: 700;
   text-align: end;
 }
 
 .amount.hidden {
   display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
